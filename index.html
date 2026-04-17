@@ -3,128 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Instalator Premium Chișinău si in suburbiile Chisinaului</title>
+<title>Instalator Premium Chișinău</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body{
-  margin:0;
-  font-family:'Inter',sans-serif;
-  background:#03050a;
-  color:#e5e7eb;
-  overflow-x:hidden;
-}
-
-/* glow background */
-body::before{
-  content:"";
-  position:fixed;
-  width:600px;
-  height:600px;
-  background:radial-gradient(circle,#22c55e55,transparent 70%);
-  top:-100px;
-  left:-100px;
-  filter:blur(120px);
-}
-
-header{
-  padding:160px 20px;
-  text-align:center;
-  background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.95)),url('teava1.jpg') center/cover;
-}
-
-h1{
-  font-size:60px;
-  text-shadow:0 0 30px #22c55e;
-}
-
-.subtitle{
-  opacity:.7;
-  font-size:20px;
-}
-
-.btn{
-  padding:16px 32px;
-  border-radius:16px;
-  text-decoration:none;
-  margin:10px;
-  display:inline-block;
-  transition:.3s;
-}
-
-.primary{
-  background:#22c55e;
-  color:#000;
-  box-shadow:0 0 30px #22c55e;
-}
-
-.primary:hover{
-  transform:scale(1.05);
-  box-shadow:0 0 50px #22c55e;
-}
-
-.section{
-  padding:100px 20px;
-  max-width:1200px;
-  margin:auto;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:30px;
-}
-
-.card{
-  padding:30px;
-  border-radius:20px;
-  background:rgba(255,255,255,0.03);
-  border:1px solid rgba(255,255,255,0.08);
-  backdrop-filter:blur(10px);
-  transition:.4s;
-}
-
-.card:hover{
-  transform:translateY(-10px);
-  box-shadow:0 0 25px #22c55e55;
-}
-
-.slider{
-  overflow:hidden;
-  border-radius:20px;
-}
-
-.slides{
-  display:flex;
-  transition:.6s;
-}
-
+body{margin:0;font-family:'Inter',sans-serif;background:#03050a;color:#e5e7eb;overflow-x:hidden}
+body::before{content:"";position:fixed;width:600px;height:600px;background:radial-gradient(circle,#22c55e55,transparent 70%);top:-100px;left:-100px;filter:blur(120px)}
+header{padding:160px 20px;text-align:center;background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.95)),url('teava1.jpg') center/cover}
+h1{font-size:60px;text-shadow:0 0 30px #22c55e}
+.subtitle{opacity:.7;font-size:20px}
+.btn{padding:16px 32px;border-radius:16px;text-decoration:none;margin:10px;display:inline-block;transition:.3s}
+.primary{background:#22c55e;color:#000;box-shadow:0 0 30px #22c55e}
+.primary:hover{transform:scale(1.05);box-shadow:0 0 50px #22c55e}
+.section{padding:100px 20px;max-width:1200px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+.card{padding:30px;border-radius:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);backdrop-filter:blur(10px);transition:.4s}
+.card:hover{transform:translateY(-10px);box-shadow:0 0 25px #22c55e55}
+.slider{overflow:hidden;border-radius:20px}
+.slides{display:flex;transition:.6s}
 .slide{min-width:100%}
-
-.slide img{
-  width:100%;
-  height:500px;
-  object-fit:cover;
-}
-
-.testimonial{
-  font-style:italic;
-  opacity:.8;
-}
-
-.call-fixed{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#22c55e;
-  padding:18px 24px;
-  border-radius:16px;
-  color:#000;
-  font-weight:700;
-  text-decoration:none;
-  box-shadow:0 0 30px #22c55e;
-}
-
+.slide img{width:100%;height:500px;object-fit:cover}
+.testimonial{font-style:italic;opacity:.8}
+.call-fixed{position:fixed;bottom:20px;right:20px;background:#22c55e;padding:18px 24px;border-radius:16px;color:#000;font-weight:700;text-decoration:none;box-shadow:0 0 30px #22c55e}
+.whatsapp{position:fixed;bottom:90px;right:20px;background:#25D366;padding:14px;border-radius:50%;text-decoration:none;font-size:20px}
+.notification{position:fixed;bottom:150px;left:20px;background:#020617;padding:12px 18px;border-radius:10px;opacity:0;transition:.5s}
+.notification.show{opacity:1}
+.fade{opacity:0;transform:translateY(40px);transition:.6s}
+.fade.show{opacity:1;transform:translateY(0)}
 </style>
 </head>
 
@@ -133,10 +38,12 @@ h1{
 <header>
 <h1>Instalator Chișinău</h1>
 <p class="subtitle">Servicii premium • intervenții rapide • 24/7</p>
-<a href="tel:+37368129925" class="btn primary">📞 Sună acum</a>
+<a href="tel:+37368129925" class="btn primary">📞 Sună ACUM (răspund imediat)</a>
+<p style="color:#22c55e;font-weight:600">⚡ 3 persoane au sunat în ultimele 10 minute</p>
+<div style="margin-top:10px;color:#22c55e;font-weight:700">🟢 ACTIV ACUM</div>
 </header>
 
-<section class="section">
+<section class="section fade">
 <h2>Lucrări</h2>
 <div class="slider">
 <div class="slides" id="slides">
@@ -148,7 +55,15 @@ h1{
 </div>
 </section>
 
-<section class="section">
+<section class="section fade">
+<h2>Înainte / După</h2>
+<div class="grid">
+<div class="card"><img src="before.jpg" style="width:100%;border-radius:10px"><p>Înainte</p></div>
+<div class="card"><img src="after.jpg" style="width:100%;border-radius:10px"><p>După</p></div>
+</div>
+</section>
+
+<section class="section fade">
 <h2>Servicii</h2>
 <div class="grid">
 <div class="card">Instalații sanitare</div>
@@ -158,7 +73,7 @@ h1{
 </div>
 </section>
 
-<section class="section">
+<section class="section fade">
 <h2>Ce spun clienții</h2>
 <div class="grid">
 <div class="card testimonial">"A venit în 30 min. Super profesionist."</div>
@@ -167,24 +82,35 @@ h1{
 </div>
 </section>
 
+<div class="notification" id="notif"></div>
+
 <a href="tel:+37368129925" class="call-fixed">📞 Sună</a>
+<a href="https://wa.me/37368129925" class="whatsapp">💬</a>
 
 <script>
-let index=0;
-let direction=1;
+let index=0, direction=1;
 const slides=document.getElementById('slides');
 const total=slides.children.length;
+setInterval(()=>{index+=direction;if(index===total-1||index===0){direction*=-1}slides.style.transform=`translateX(-${index*100}%)`},4000);
 
-setInterval(()=>{
- index+=direction;
- if(index===total-1||index===0){direction*=-1}
- slides.style.transform=`translateX(-${index*100}%)`;
-},4000);
-
-/* mouse glow */
-document.addEventListener('mousemove',e=>{
- document.body.style.backgroundPosition=`${e.clientX/50}px ${e.clientY/50}px`;
+const fades=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+ fades.forEach(el=>{if(el.getBoundingClientRect().top<window.innerHeight-100){el.classList.add('show')}})
 });
+
+const notif=document.getElementById('notif');
+const mesaje=[
+"📞 Client din Botanica a sunat",
+"📞 Intervenție în Centru",
+"📞 Cerere nouă primită",
+"📞 Lucrare urgentă finalizată"
+];
+setInterval(()=>{
+ const random=mesaje[Math.floor(Math.random()*mesaje.length)];
+ notif.innerText=random;
+ notif.classList.add('show');
+ setTimeout(()=>notif.classList.remove('show'),3000);
+},6000);
 </script>
 
 </body>
