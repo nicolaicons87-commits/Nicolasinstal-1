@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Instalator Chișinău 24/7 🚀 Ajung rapid în 30 min</title>
-<meta name="description" content="Instalator Chișinău. Intervenții rapide 24/7. Desfundare țevi, reparații urgente, montaj boilere. Sună acum!">
+<title>Instalator Chișinău 24/7 Nicolai 🚀 Ajung în 30 min</title>
+<meta name="description" content="Instalator Chișinău 24/7. Ajung rapid în 30-60 minute. Desfundare țevi, reparații urgente, montaj boilere. Sună acum!">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -44,13 +44,15 @@ h1{font-size:56px;text-shadow:0 0 25px #22c55e}
 <body>
 
 <header>
-<h1>Instalator Chișinău</h1>
+<h1>Instalator Chișinău 24/7 Nicolai</h1>
 <p class="subtitle">Intervenții rapide • Servicii premium • 24/7</p>
 
-<a href="tel:+37368129925" class="btn primary">📞 Sună ACUM (răspund imediat)</a>
+<a href="tel:+37368129925" class="btn primary">📞 Sună ACUM – ajung în 30 min</a>
+
+<p style="color:#22c55e;font-weight:600">✔️ Peste 100 lucrări realizate în Chișinău</p>
 
 <div id="liveCounter" style="margin-top:10px;color:#22c55e;font-weight:600"></div>
-<div style="color:#f87171;font-weight:700">⚠️ Mai sunt doar 2 locuri azi</div>
+<div style="color:#f87171;font-weight:700">⚠️ Programul de azi aproape complet</div>
 </header>
 
 <section class="section fade">
@@ -118,6 +120,10 @@ h1{font-size:56px;text-shadow:0 0 25px #22c55e}
 <div class="card">Montaj boilere</div>
 <div class="card">Desfundare țevi</div>
 </div>
+
+<p style="opacity:.7;margin-top:20px">
+Botanica • Centru • Râșcani • Buiucani • Ciocana
+</p>
 </section>
 
 <section class="section fade">
@@ -128,7 +134,7 @@ h1{font-size:56px;text-shadow:0 0 25px #22c55e}
 
 <div id="notif" style="position:fixed;bottom:140px;left:20px;background:#020617;padding:12px 18px;border-radius:10px;opacity:0;transition:.5s;z-index:9999"></div>
 
-<a href="tel:+37368129925" class="call-fixed">📞 Sună acum (disponibil)</a>
+<a href="tel:+37368129925" class="call-fixed">📞 Sună ACUM</a>
 
 <a href="https://wa.me/37368129925?text=Salut,%20am%20o%20urgență%20la%20instalații.%20Poți%20veni%20ACUM?" class="whatsapp">💬</a>
 
@@ -143,7 +149,6 @@ if(i==t-1||i==0)d*=-1;
 s.style.transform=`translateX(-${i*100}%)`;
 },4000);
 
-/* oameni pe site */
 function randomUsers(){
 const nr=Math.floor(Math.random()*5)+3;
 document.getElementById("liveCounter").innerText="👀 "+nr+" persoane se uită acum";
@@ -151,15 +156,13 @@ document.getElementById("liveCounter").innerText="👀 "+nr+" persoane se uită 
 setInterval(randomUsers,3000);
 randomUsers();
 
-/* notificari */
 const notif=document.getElementById('notif');
 const mesaje=[
 "📞 Client din Botanica a sunat acum",
 "📞 Intervenție în Centru",
 "📞 Cerere nouă primită",
 "📞 Lucrare urgentă finalizată",
-"📞 Client din Râșcani a sunat",
-"📞 Programare făcută acum 2 min"
+"📞 Client din Râșcani a sunat"
 ];
 
 setInterval(()=>{
@@ -169,16 +172,6 @@ notif.style.opacity=1;
 setTimeout(()=>notif.style.opacity=0,3000);
 },5000);
 
-/* tracking apel */
-document.querySelectorAll('a[href^="tel:"]').forEach(btn=>{
-btn.addEventListener('click', ()=>{
-if(typeof gtag!=='undefined'){
-gtag('event','click_call',{event_category:'contact',event_label:'telefon'});
-}
-});
-});
-
-/* animatii */
 const f=document.querySelectorAll('.fade');
 window.onscroll=()=>f.forEach(e=>{
 if(e.getBoundingClientRect().top<innerHeight-100)e.classList.add('show');
