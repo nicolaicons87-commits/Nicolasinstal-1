@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Instalator Chișinău 24/7 🚀 Ajung rapid în 30 min</title>
-<meta name="description" content="Instalator Chișinău. Intervenții rapide 24/7. Desfundare țevi, reparații urgente, montaj boilere. Sună acum!">
+<title>Instalator Chișinău  si in Suburbiile Chisinaului 🚀 Ajung rapid în 30 min</title>
+<meta name="description" content="Instalator Chișinău. Intervenții rapide . Desfundare țevi, reparații urgente, montaj boilere. Sună acum!">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -57,19 +57,28 @@ box-shadow:0 0 20px #25D366;
 <h1>Instalator Chișinău</h1>
 <p class="subtitle">Intervenții rapide • Servicii premium • 24/7</p>
 
-<a href="tel:+37368129925" class="btn primary">📞 Sună ACUM</a>
-
-<p style="color:#22c55e;">🟢 Activ acum • răspund imediat</p>
+<a href="tel:+37368129925" class="btn primary">📞 Sună ACUM (răspund imediat)</a>
+<p style="color:#22c55e;">🟢 Activ acum</p>
 </header>
 
 <section class="section fade">
-<h2>Lucrări</h2>
+<h2>Lucrări reale</h2>
+
 <div class="slider">
 <div class="slides" id="slides">
+
 <div class="slide"><img src="teava1.jpg"></div>
 <div class="slide"><img src="baie1.jpg"></div>
 <div class="slide"><img src="boiler1.jpg"></div>
 <div class="slide"><img src="reparatie1.jpg"></div>
+
+<div class="slide"><img src="lucrare-2.jpg"></div>
+<div class="slide"><img src="lucrare-3.jpg"></div>
+<div class="slide"><img src="lucrare-4.jpg"></div>
+
+<div class="slide"><img src="lucrare2.jpg"></div>
+<div class="slide"><img src="lucrare3.jpg"></div>
+
 </div>
 </div>
 </section>
@@ -123,7 +132,7 @@ box-shadow:0 0 20px #25D366;
 <section class="section fade">
 <h2>Zona de intervenție</h2>
 <iframe src="https://www.google.com/maps?q=Chișinău&output=embed" width="100%" height="400" style="border:0;border-radius:15px;"></iframe>
-<p style="opacity:.6;">Intervenim în tot Chișinău</p>
+<p style="opacity:.6;">Intervenim în tot Chișinău și suburbii</p>
 </section>
 
 <a href="tel:+37368129925" class="call-fixed">📞 Sună</a>
@@ -141,8 +150,12 @@ if(i==t-1||i==0)d*=-1;
 s.style.transform=`translateX(-${i*100}%)`;
 },4000);
 
-document.querySelectorAll('a[href^="tel:"]').forEach(b=>{
-b.onclick=()=>console.log("apel");
+document.querySelectorAll('a[href^="tel:"]').forEach(btn=>{
+btn.addEventListener('click', ()=>{
+if(typeof gtag!=='undefined'){
+gtag('event','click_call',{event_category:'contact',event_label:'telefon'});
+}
+});
 });
 
 const f=document.querySelectorAll('.fade');
