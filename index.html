@@ -11,148 +11,77 @@
 <style>
 body{margin:0;font-family:'Inter',sans-serif;background:#03050a;color:#e5e7eb}
 
-header{
-padding:140px 20px;
-text-align:center;
-background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.95)),url('teava1.jpg') center/cover
-}
+/* HERO */
+.hero{position:relative;height:100vh;background:url('hero.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center}
+.overlay{position:absolute;width:100%;height:100%;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.95))}
+.hero-content{position:relative;z-index:2}
 
-h1{font-size:50px;text-shadow:0 0 20px #22c55e}
+.glow{font-size:52px;text-shadow:0 0 20px #22c55e;animation:glow 2s infinite alternate}
+@keyframes glow{from{text-shadow:0 0 10px #22c55e}to{text-shadow:0 0 30px #22c55e}}
 
-.phone{
-font-size:32px;
-font-weight:900;
-color:#22c55e;
-text-decoration:none;
-display:block;
-margin:15px 0;
-}
+.cta{display:inline-block;margin-top:20px;padding:16px 32px;background:#22c55e;color:#000;font-weight:700;border-radius:14px;text-decoration:none;animation:pulse 1.5s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.08)}100%{transform:scale(1)}}
 
-.btn{
-padding:14px 28px;
-border-radius:12px;
-background:#22c55e;
-color:#000;
-text-decoration:none;
-font-weight:700;
-display:inline-block;
-}
+.phone-big{margin-top:20px;font-size:28px;font-weight:900;color:#22c55e}
+.typing{font-size:20px;opacity:.8;margin-top:10px}
 
-.section{padding:70px 20px;max-width:1100px;margin:auto}
+/* SECTION */
+.section{padding:80px 20px;max-width:1200px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#111;padding:20px;border-radius:15px}
 
-.slider{
-overflow:hidden;
-border-radius:20px;
-background:#000;
-}
+/* SLIDER */
+.slider{overflow:hidden;border-radius:20px;background:#000}
+.slides{display:flex;transition:.6s}
+.slide{min-width:100%;display:flex;justify-content:center;align-items:center}
+.slide img{width:100%;height:420px;object-fit:contain}
 
-.slides{
-display:flex;
-transition:.6s;
-}
+/* BUTTONS */
+.call-fixed{position:fixed;bottom:20px;right:20px;background:#22c55e;padding:14px;border-radius:12px;color:#000;font-weight:700;text-decoration:none}
+.whatsapp{position:fixed;bottom:80px;right:20px;background:#25D366;padding:14px;border-radius:50%;text-decoration:none}
 
-.slide{
-min-width:100%;
-display:flex;
-align-items:center;
-justify-content:center;
-}
-
-.slide img{
-width:100%;
-height:420px;
-object-fit:contain;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-padding:20px;
-border-radius:15px;
-background:#111;
-}
-
-.call-fixed{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#22c55e;
-padding:14px;
-border-radius:12px;
-color:#000;
-font-weight:700;
-text-decoration:none;
-}
-
-.whatsapp{
-position:fixed;
-bottom:80px;
-right:20px;
-background:#25D366;
-padding:14px;
-border-radius:50%;
-text-decoration:none;
-}
-
-#callbar{
-position:fixed;
-bottom:-100px;
-left:0;
-width:100%;
-background:#22c55e;
-text-align:center;
-padding:15px;
-font-weight:800;
-transition:.3s;
-}
-
+#callbar{position:fixed;bottom:-100px;left:0;width:100%;background:#22c55e;text-align:center;padding:15px;font-weight:800;transition:.3s}
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>Instalator Chișinău 24/7</h1>
+<header class="hero">
+<div class="overlay"></div>
 
-<a href="tel:+37368129925" class="phone">
-📞 068 12 99 25
-</a>
+<div class="hero-content">
+<h1 class="glow">Instalator Chișinău 24/7</h1>
+<p class="typing" id="typing"></p>
 
-<a href="tel:+37368129925" class="btn">Sună acum</a>
+<a href="tel:+37368129925" class="cta">📞 Sună ACUM (răspund imediat)</a>
 
-<p style="color:#22c55e">✔️ Lucrări reale • Garanție</p>
+<p style="color:#22c55e;font-weight:700;margin-top:10px">
+⚡ 2 persoane au sunat în ultimele 5 minute
+</p>
+
+<div class="phone-big">📞 068 12 99 25</div>
+</div>
 </header>
 
 <section class="section">
-<h2>Lucrările mele</h2>
-
+<h2>Lucrări reale</h2>
 <div class="slider">
 <div class="slides" id="slides">
-
 <div class="slide"><img src="teava1.jpg"></div>
 <div class="slide"><img src="baie1.jpg"></div>
 <div class="slide"><img src="boiler1.jpg"></div>
 <div class="slide"><img src="reparatie1.jpg"></div>
-
 <div class="slide"><img src="lucrare-2.jpg"></div>
 <div class="slide"><img src="lucrare-3.jpg"></div>
 <div class="slide"><img src="lucrare-4.jpg"></div>
-
 <div class="slide"><img src="lucrare2.jpg"></div>
 <div class="slide"><img src="lucrare3.jpg"></div>
-
 </div>
 </div>
-
 </section>
 
 <section class="section">
 <h2>Prețuri</h2>
-
 <div class="grid">
 <div class="card">Desfundare țevi<br><b>200 lei</b></div>
 <div class="card">Montaj boiler<br><b>500 lei</b></div>
@@ -160,6 +89,36 @@ transition:.3s;
 <div class="card">Instalații<br><b>300 lei</b></div>
 </div>
 
+<p style="opacity:.7;margin-top:10px">
+✔️ Prețul final se stabilește înainte  
+✔️ Nu plătești dacă nu ești mulțumit
+</p>
+</section>
+
+<section class="section">
+<h2>Ce spun clienții</h2>
+<div class="grid">
+
+<div class="card">⭐⭐⭐⭐⭐<br><b>Andrei – Botanica</b><br>A venit în 25 minute. Preț corect.</div>
+<div class="card">⭐⭐⭐⭐⭐<br><b>Maria – Centru</b><br>Foarte rapid și profesionist.</div>
+<div class="card">⭐⭐⭐⭐⭐<br><b>Ion – Râșcani</b><br>A rezolvat urgent fără probleme.</div>
+<div class="card">⭐⭐⭐⭐⭐<br><b>Elena – Buiucani</b><br>Recomand! Foarte serios.</div>
+
+</div>
+
+<p style="margin-top:20px;color:#22c55e;font-weight:700;">
+✔️ Peste 100 clienți mulțumiți
+</p>
+</section>
+
+<section class="section">
+<h2>De ce să mă alegi</h2>
+<div class="grid">
+<div class="card">✔️ Experiență reală</div>
+<div class="card">✔️ Intervenții zilnice</div>
+<div class="card">✔️ Lucru rapid</div>
+<div class="card">✔️ Răspund imediat</div>
+</div>
 </section>
 
 <section class="section">
@@ -187,6 +146,21 @@ s.style.transform=`translateX(-${i*100}%)`;
 window.addEventListener("scroll",()=>{
 document.getElementById("callbar").style.bottom=window.scrollY>200?"0":"-100px";
 });
+
+const text="Calitate • Rapiditate • Preț corect";
+let t=0;
+function type(){
+if(t<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(t);
+t++;
+setTimeout(type,50);
+}}
+type();
+
+setInterval(()=>{
+document.querySelector(".phone-big").style.opacity =
+document.querySelector(".phone-big").style.opacity == 0.5 ? 1 : 0.5;
+},800);
 </script>
 
 </body>
