@@ -3,49 +3,141 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Instalator Chișinău 24/7 | Ajung în 30 min-60 min</title>
-<meta name="description" content="Instalator Chișinău. Intervenții rapide 24/7. Ajung în 30 minute.">
-
+<title>Instalator Premium Chișinău si in suburbiile Chisinaului</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:'Inter',sans-serif;background:linear-gradient(135deg,#020617,#0f172a,#020617);color:#e5e7eb}
-header{background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),url('teava1.jpg') center/cover;padding:120px 20px;text-align:center}
-h1{font-size:48px;margin:0}
-p{line-height:1.6}
-.container{max-width:1100px;margin:auto;padding:20px}
-.card{background:rgba(255,255,255,0.05);backdrop-filter:blur(10px);border-radius:20px;padding:28px;margin-bottom:25px;border:1px solid rgba(255,255,255,0.1);opacity:0;transform:translateY(40px);transition:.6s}
-.card.show{opacity:1;transform:translateY(0)}
-.btn{display:inline-block;padding:16px 28px;border-radius:12px;text-decoration:none;font-weight:700;margin:10px}
-.call{background:#22c55e;color:#000;box-shadow:0 0 20px #22c55e}
-.slider{overflow:hidden;border-radius:18px}
-.slides{display:flex;transition:.5s}
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#03050a;
+  color:#e5e7eb;
+  overflow-x:hidden;
+}
+
+/* glow background */
+body::before{
+  content:"";
+  position:fixed;
+  width:600px;
+  height:600px;
+  background:radial-gradient(circle,#22c55e55,transparent 70%);
+  top:-100px;
+  left:-100px;
+  filter:blur(120px);
+}
+
+header{
+  padding:160px 20px;
+  text-align:center;
+  background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.95)),url('teava1.jpg') center/cover;
+}
+
+h1{
+  font-size:60px;
+  text-shadow:0 0 30px #22c55e;
+}
+
+.subtitle{
+  opacity:.7;
+  font-size:20px;
+}
+
+.btn{
+  padding:16px 32px;
+  border-radius:16px;
+  text-decoration:none;
+  margin:10px;
+  display:inline-block;
+  transition:.3s;
+}
+
+.primary{
+  background:#22c55e;
+  color:#000;
+  box-shadow:0 0 30px #22c55e;
+}
+
+.primary:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 50px #22c55e;
+}
+
+.section{
+  padding:100px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.card{
+  padding:30px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  transition:.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 25px #22c55e55;
+}
+
+.slider{
+  overflow:hidden;
+  border-radius:20px;
+}
+
+.slides{
+  display:flex;
+  transition:.6s;
+}
+
 .slide{min-width:100%}
-.slide img{width:100%;height:400px;object-fit:cover}
-.call-fixed{position:fixed;bottom:0;left:0;width:100%;background:#22c55e;color:#000;text-align:center;padding:18px;font-size:20px;font-weight:800;text-decoration:none;z-index:9999}
-.whatsapp{position:fixed;bottom:90px;right:20px;background:#25D366;padding:15px;border-radius:50%;font-size:22px;text-decoration:none;color:#000;z-index:9999}
-.notification{position:fixed;bottom:140px;left:20px;background:#020617;padding:12px 18px;border-radius:10px;opacity:0;transition:.5s}
-.notification.show{opacity:1}
+
+.slide img{
+  width:100%;
+  height:500px;
+  object-fit:cover;
+}
+
+.testimonial{
+  font-style:italic;
+  opacity:.8;
+}
+
+.call-fixed{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#22c55e;
+  padding:18px 24px;
+  border-radius:16px;
+  color:#000;
+  font-weight:700;
+  text-decoration:none;
+  box-shadow:0 0 30px #22c55e;
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Instalator Chișinău 24/7</h1>
-<p>Ajung în 30 minute – rezolv problema pe loc</p>
-<p style="color:#38bdf8;font-weight:700;">✔️ Nu mai pierde timp – ai găsit instalatorul potrivit</p>
-<p style="color:#22c55e;">✔️ Peste 100 clienți mulțumiți</p>
-<p style="color:#22c55e;">✔️ Garanție pentru fiecare lucrare</p>
-<p style="color:#f87171;font-weight:800;">⚠️ Intervențiile de azi se ocupă rapid</p>
-<a class="btn call" href="tel:+37368129925">📞 Sună ACUM</a>
+<h1>Instalator Chișinău</h1>
+<p class="subtitle">Servicii premium • intervenții rapide • 24/7</p>
+<a href="tel:+37368129925" class="btn primary">📞 Sună acum</a>
 </header>
 
-<div class="container">
-
-<div class="card">
-<h2>Lucrări reale</h2>
+<section class="section">
+<h2>Lucrări</h2>
 <div class="slider">
 <div class="slides" id="slides">
 <div class="slide"><img src="teava1.jpg"></div>
@@ -54,68 +146,45 @@ p{line-height:1.6}
 <div class="slide"><img src="reparatie1.jpg"></div>
 </div>
 </div>
-<a class="btn call" href="tel:+37368129925">📞 Sună acum</a>
+</section>
+
+<section class="section">
+<h2>Servicii</h2>
+<div class="grid">
+<div class="card">Instalații sanitare</div>
+<div class="card">Reparații urgente</div>
+<div class="card">Montaj boilere</div>
+<div class="card">Desfundare țevi</div>
 </div>
+</section>
 
-<div class="card">
-<h2>Clienți mulțumiți</h2>
-<p>✔️ „A venit în 30 minute”</p>
-<p>✔️ „Foarte rapid și profesionist”</p>
-<p>✔️ „Recomand cu încredere”</p>
-<a class="btn call" href="tel:+37368129925">📞 Sună acum</a>
+<section class="section">
+<h2>Ce spun clienții</h2>
+<div class="grid">
+<div class="card testimonial">"A venit în 30 min. Super profesionist."</div>
+<div class="card testimonial">"Rapid și corect la preț."</div>
+<div class="card testimonial">"Recomand fără dubii."</div>
 </div>
+</section>
 
-<div class="card">
-<h2>De ce să mă alegi</h2>
-<p>✔️ Intervenție rapidă</p>
-<p>✔️ Lucru curat</p>
-<p>✔️ Preț corect</p>
-<p style="color:#22c55e;font-weight:700;">✔️ Plătești doar dacă ești mulțumit</p>
-<a class="btn call" href="tel:+37368129925">📞 Sună acum</a>
-</div>
-
-<div class="card" style="text-align:center">
-<h2>Nu mai amâna problema</h2>
-<p>Cu cât aștepți, cu atât se agravează</p>
-<a class="btn call" href="tel:+37368129925">📞 Sună acum</a>
-</div>
-
-</div>
-
-<div class="notification" id="notif"></div>
-
-<a href="tel:+37368129925" class="call-fixed">📞 Sună ACUM – 068129925</a>
-<a href="https://wa.me/37368129925?text=Salut%20am%20nevoie%20de%20instalator" class="whatsapp">💬+37368129925</a>
+<a href="tel:+37368129925" class="call-fixed">📞 Sună</a>
 
 <script>
 let index=0;
+let direction=1;
 const slides=document.getElementById('slides');
 const total=slides.children.length;
+
 setInterval(()=>{
-index=(index+1)%total;
-slides.style.transform=`translateX(-${index*100}%)`;
+ index+=direction;
+ if(index===total-1||index===0){direction*=-1}
+ slides.style.transform=`translateX(-${index*100}%)`;
 },4000);
 
-const cards=document.querySelectorAll('.card');
-window.addEventListener('scroll',()=>{
-cards.forEach(card=>{
-if(card.getBoundingClientRect().top<window.innerHeight-100){card.classList.add('show');}
+/* mouse glow */
+document.addEventListener('mousemove',e=>{
+ document.body.style.backgroundPosition=`${e.clientX/50}px ${e.clientY/50}px`;
 });
-});
-
-const notif=document.getElementById('notif');
-const mesaje=[
-"📞 Client din Botanica a sunat",
-"📞 Intervenție în Centru",
-"📞 Cerere nouă primită",
-"📞 Lucrare urgentă finalizată"
-];
-setInterval(()=>{
-const random=mesaje[Math.floor(Math.random()*mesaje.length)];
-notif.innerText=random;
-notif.classList.add('show');
-setTimeout(()=>notif.classList.remove('show'),3000);
-},6000);
 </script>
 
 </body>
