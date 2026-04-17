@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Instalator Chișinău 24/7 Nicolai 🚀 Ajung în 30 min</title>
-<meta name="description" content="Instalator Chișinău 24/7. Ajung rapid în 30-60 minute. Desfundare țevi, reparații urgente, montaj boilere.">
+<meta name="description" content="Instalator Chișinău 24/7. Intervenții rapide în 30-60 minute. Desfundare țevi, reparații urgente, montaj boilere.">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -16,7 +16,17 @@ body::before{content:"";position:fixed;width:600px;height:600px;background:radia
 header{padding:160px 20px;text-align:center;background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.95)),url('teava1.jpg') center/cover}
 h1{font-size:56px;text-shadow:0 0 25px #22c55e}
 
-.btn{padding:16px 32px;border-radius:16px;text-decoration:none;margin:10px;display:inline-block;background:#22c55e;color:#000;font-weight:700;box-shadow:0 0 25px #22c55e}
+.phone{
+font-size:34px;
+font-weight:900;
+color:#22c55e;
+text-decoration:none;
+display:block;
+margin:15px 0;
+text-shadow:0 0 10px #22c55e;
+}
+
+.btn{padding:16px 32px;border-radius:16px;text-decoration:none;margin:10px;display:inline-block;background:#22c55e;color:#000;font-weight:700}
 
 .section{padding:80px 20px;max-width:1200px;margin:auto}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
@@ -28,8 +38,7 @@ h1{font-size:56px;text-shadow:0 0 25px #22c55e}
 .slide{min-width:100%}
 .slide img{width:100%;height:450px;object-fit:cover}
 
-.whatsapp{position:fixed;bottom:90px;right:20px;background:#25D366;padding:16px;border-radius:50%;font-size:22px;text-decoration:none}
-
+.whatsapp{position:fixed;bottom:90px;right:20px;background:#25D366;padding:16px;border-radius:50%;text-decoration:none}
 .call-fixed{position:fixed;bottom:20px;right:20px;background:#22c55e;padding:16px;border-radius:12px;color:#000;font-weight:700;text-decoration:none}
 
 #callbar{position:fixed;bottom:-100px;left:0;width:100%;background:#22c55e;color:#000;text-align:center;padding:16px;font-weight:800;transition:.4s;z-index:9999}
@@ -42,32 +51,35 @@ h1{font-size:56px;text-shadow:0 0 25px #22c55e}
 <header>
 <h1>Instalator Chișinău 24/7 Nicolai</h1>
 
-<a href="tel:+37368129925" style="font-size:30px;color:#22c55e;font-weight:800;text-decoration:none;display:block;margin:10px 0">
-📞 068 12 99 25
+<a href="tel:+37368129925" class="phone">
+📞 SUNĂ ACUM: 068 12 99 25
 </a>
 
-<a href="tel:+37368129925" class="btn">📞 Sună ACUM – ajung în 30 min</a>
+<a href="tel:+37368129925" class="btn">📞 Ajung în 30 min</a>
 
 <p style="color:#22c55e">✔️ Peste 100 lucrări realizate</p>
+<p style="color:#22c55e">✔️ Garanție pentru lucrare</p>
+<p style="color:#22c55e">✔️ Intervenții zilnice în Chișinău</p>
+
 <p style="color:#f87171;font-weight:700">⚠️ Programul de azi aproape complet</p>
 
 <div id="liveCounter"></div>
 </header>
 
 <section class="section">
-<h2>Lucrări</h2>
+<h2>Lucrări reale</h2>
 <div class="slider">
 <div class="slides" id="slides">
 
-<img class="slide" src="teava1.jpg">
-<img class="slide" src="baie1.jpg">
-<img class="slide" src="boiler1.jpg">
-<img class="slide" src="reparatie1.jpg">
-<img class="slide" src="lucrare-2.jpg">
-<img class="slide" src="lucrare-3.jpg">
-<img class="slide" src="lucrare-4.jpg">
-<img class="slide" src="lucrare2.jpg">
-<img class="slide" src="lucrare3.jpg">
+<div class="slide"><img src="teava1.jpg"></div>
+<div class="slide"><img src="baie1.jpg"></div>
+<div class="slide"><img src="boiler1.jpg"></div>
+<div class="slide"><img src="reparatie1.jpg"></div>
+<div class="slide"><img src="lucrare-2.jpg"></div>
+<div class="slide"><img src="lucrare-3.jpg"></div>
+<div class="slide"><img src="lucrare-4.jpg"></div>
+<div class="slide"><img src="lucrare2.jpg"></div>
+<div class="slide"><img src="lucrare3.jpg"></div>
 
 </div>
 </div>
@@ -80,15 +92,6 @@ h1{font-size:56px;text-shadow:0 0 25px #22c55e}
 <div class="card">Montaj boiler<br><b>500 lei</b></div>
 <div class="card">Reparații<br><b>200 lei</b></div>
 <div class="card">Instalații<br><b>300 lei</b></div>
-</div>
-</section>
-
-<section class="section">
-<h2>Pachete</h2>
-<div class="grid">
-<div class="card">Standard<br><b>300 lei</b></div>
-<div class="card">Urgent<br><b>500 lei</b></div>
-<div class="card">Premium<br><b>800 lei</b></div>
 </div>
 </section>
 
@@ -111,13 +114,11 @@ h1{font-size:56px;text-shadow:0 0 25px #22c55e}
 
 <!-- POPUP -->
 <div id="popup" style="position:fixed;top:0;left:0;width:100%;height:100%;background:#000a;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:.4s">
-
 <div style="background:#020617;padding:25px;border-radius:20px;text-align:center">
 <h2>Ai nevoie de instalator?</h2>
 <a href="tel:+37368129925" class="btn">📞 Sună ACUM</a>
-<p onclick="popup.style.display='none'" style="cursor:pointer">Închide</p>
+<p onclick="closePopup()" style="cursor:pointer">Închide</p>
 </div>
-
 </div>
 
 <script>
@@ -146,10 +147,17 @@ window.addEventListener("scroll",()=>{
 document.getElementById("callbar").style.bottom=window.scrollY>200?"0":"-100px";
 });
 
+const popup=document.getElementById("popup");
+
 setTimeout(()=>{
-popup.style.opacity=1;
+popup.style.opacity="1";
 popup.style.pointerEvents="auto";
 },8000);
+
+function closePopup(){
+popup.style.opacity="0";
+popup.style.pointerEvents="none";
+}
 </script>
 
 </body>
