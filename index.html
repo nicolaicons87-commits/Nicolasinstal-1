@@ -3,241 +3,190 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instalator Chișinău 24/7 | Intervenție 1 oră | Garanție 5 ani</title>
+<meta name="description" content="Instalator autorizat Chișinău. 650+ lucrări. Desfundări, boilere, instalații. Preț corect. Sună 068 12 99 25">
+<link rel="icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<title>Instalator Chișinău 24/7</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Plumber","name":"Instalator Chișinău 24/7","telephone":"+37368129925","address":{"@type":"PostalAddress","addressLocality":"Chișinău"},"areaServed":["Chișinău","Durlești","Codru"]}
+</script>
 
 <style>
-body{margin:0;font-family:'Inter',sans-serif;background:#020617;color:#fff}
-
-/* TOP BAR */
-.topbar{
-position:fixed;
-top:0;
-width:100%;
-background:#22c55e;
-color:#000;
-text-align:center;
-padding:8px;
-font-weight:700;
-z-index:999;
+:root{
+  --bg:#020617;
+  --navy:#0f172a;
+  --green:#22c55e;
+  --green-glow:rgba(34,197,94,.4);
+  --text:#e2e8f0;
+  --muted:#94a3b8;
 }
+*{scroll-behavior:smooth;box-sizing:border-box}
+body{margin:0;font-family:'Inter',sans-serif;background:var(--bg);color:var(--text)}
+h1,h2{font-weight:900;letter-spacing:-1px}
 
-/* HERO */
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding-top:50px;
-background:
-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
-url('lucrare6.jpg') center/cover;
-animation:fade 1.2s ease;
-}
+/* TOPBAR + MENIU GLASS */
+.topbar{position:fixed;top:0;width:100%;background:linear-gradient(90deg,#22c55e,#16a34a);color:#000;text-align:center;padding:10px;font-weight:800;z-index:1000;font-size:14px;letter-spacing:.5px}
+header{position:fixed;top:44px;width:100%;backdrop-filter:blur(16px);background:rgba(15,23,42,.7);border-bottom:1px solid rgba(255,255,255,.08);z-index:999}
+.nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 20px}
+.logo{font-size:20px;font-weight:900}.logo span{color:var(--green)}
+.nav-links{display:flex;gap:24px}
+.nav-links a{color:var(--text);text-decoration:none;font-weight:600;font-size:15px;transition:.3s}
+.nav-links a:hover{color:var(--green)}
+.benefit-bar{text-align:center;background:#000;padding:8px;font-size:13px;font-weight:700;color:var(--muted);border-bottom:1px solid #ffffff10}
+.benefit-bar span{color:var(--green);margin:0 8px}
 
-@keyframes fade{
-from{opacity:0;transform:translateY(20px)}
-to{opacity:1;transform:translateY(0)}
-}
+/* HERO CU POZA TA NOUA */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:160px 20px 80px;background:linear-gradient(rgba(2,6,23,.75),rgba(2,6,23,.9)),url('hero-bg.jpg') center/cover no-repeat;animation:fade 1.2s ease}
+@keyframes fade{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.hero h1{font-size:clamp(32px,5vw,56px);max-width:900px;line-height:1.1;margin:0;text-shadow:0 2px 20px rgba(0,0,0,.5)}
+.subtitle{color:var(--muted);margin:16px 0 24px;font-size:18px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:700px;margin:20px auto}
+.stat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);padding:18px;border-radius:16px;backdrop-filter:blur(10px)}
+.stat b{font-size:32px;color:var(--green);display:block}
+.btn{background:var(--green);color:#000;padding:18px 36px;border-radius:14px;text-decoration:none;font-weight:900;font-size:17px;margin-top:10px;display:inline-block;box-shadow:0 0 30px var(--green-glow);transition:.3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 0 50px var(--green-glow)}
+.phone{color:var(--green);font-size:24px;margin-top:12px;font-weight:800}
+.timer{margin-top:8px;font-size:14px;color:var(--muted)}
 
-h1{font-size:46px;max-width:800px}
-.subtitle{opacity:.8;margin-top:10px}
+/* SECTIUNI */
+.section{padding:90px 20px;max-width:1200px;margin:auto}
+.section h2{text-align:center;font-size:36px;margin-bottom:50px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
 
-.btn{
-background:#22c55e;
-color:#000;
-padding:16px 30px;
-border-radius:12px;
-text-decoration:none;
-font-weight:800;
-margin-top:20px;
-display:inline-block;
-box-shadow:0 0 20px #22c55e55;
-transition:.3s;
-}
-.btn:hover{transform:scale(1.05)}
+/* CARDURI 3D */
+.card{background:var(--navy);padding:24px;border-radius:18px;border:1px solid rgba(255,255,255,.06);transition:.4s;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--green),transparent)}
+.card:hover{transform:translateY(-8px);border-color:var(--green)}
+.card b{color:var(--green);font-size:24px;display:block;margin-top:8px}
 
-.phone{color:#22c55e;font-size:22px;margin-top:10px;font-weight:700}
+/* GALERIE */
+.img-box{position:relative;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.08);background:var(--navy);min-height:280px}
+.img-box img{width:100%;height:280px;object-fit:cover;transition:.5s;display:block}
+.img-box:hover img{transform:scale(1.1)}
+.badge{position:absolute;bottom:12px;left:12px;background:rgba(2,6,23,.85);backdrop-filter:blur(8px);padding:10px 14px;border-radius:12px;font-size:13px;font-weight:700;border:1px solid rgba(34,197,94,.3)}
 
-/* TIMER */
-.timer{
-margin-top:10px;
-font-size:14px;
-opacity:.8;
-}
+/* RECENZII */
+.review{background:var(--navy);padding:24px;border-radius:18px;border:1px solid rgba(255,255,255,.06)}
+.stars{color:var(--green);font-size:18px;margin-bottom:8px}
 
-/* SECTION */
-.section{padding:70px 20px;max-width:1200px;margin:auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+/* FAQ */
+details{background:var(--navy);padding:18px;border-radius:14px;margin-bottom:12px;border:1px solid rgba(255,255,255,.06);cursor:pointer}
+summary{font-weight:700;list-style:none}
+summary::-webkit-details-marker{display:none}
 
-/* GALLERY */
-.img-box{position:relative;border-radius:14px;overflow:hidden}
-.img-box img{
-width:100%;
-height:260px;
-object-fit:cover;
-transition:.4s;
-}
-.img-box:hover img{transform:scale(1.08)}
+/* FLOAT + TOP BTN */
+.float-btn{position:fixed;right:20px;z-index:1000;display:flex;flex-direction:column;gap:12px}
+.call{bottom:20px;background:var(--green);color:#000;padding:18px;border-radius:16px;text-decoration:none;font-weight:900;box-shadow:0 0 25px var(--green-glow)}
+.whatsapp{bottom:90px;background:#25D366;padding:18px;border-radius:50%;text-decoration:none;box-shadow:0 0 25px rgba(37,211,102,.4)}
+.top-btn{bottom:160px;background:#fff;color:#000;padding:14px;border-radius:50%;text-decoration:none;display:none}
+.float-btn a{font-size:20px;text-align:center}
 
-.badge{
-position:absolute;
-bottom:10px;
-left:10px;
-background:rgba(0,0,0,.7);
-padding:8px 12px;
-border-radius:10px;
-font-size:13px;
-}
-
-/* PRICES */
-.card{
-background:#0f172a;
-padding:20px;
-border-radius:14px;
-text-align:center;
-transition:.3s;
-}
-.card:hover{transform:translateY(-5px)}
-
-.card b{color:#22c55e;font-size:22px}
-
-/* MAP */
-.map iframe{
-border-radius:16px;
-box-shadow:0 0 20px rgba(0,0,0,.5);
-}
-
-/* FLOAT */
-.call{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#22c55e;
-color:#000;
-padding:16px;
-border-radius:12px;
-text-decoration:none;
-font-weight:800;
-box-shadow:0 0 15px #22c55e;
-}
-
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:80px;
-background:#25D366;
-padding:16px;
-border-radius:50%;
-text-decoration:none;
-box-shadow:0 0 15px #25D366;
-}
+/* MOBILE */
+@media(max-width:768px){
+  .nav-links{display:none}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .hero h1{font-size:32px}
+  .hero{background:linear-gradient(rgba(2,6,23,.8),rgba(2,6,23,.95)),url('hero-bg.jpg') center top/cover no-repeat}
 </style>
 </head>
-
 <body>
 
-<div class="topbar">
-📞 Sună acum: 068 12 99 25 • Răspund imediat
+<div class="topbar">📞 Sună ACUM: 068 12 99 25 • Răspund în 2 minute</div>
+<header>
+  <div class="nav">
+    <div class="logo">Instalator<span>.md</span></div>
+    <nav class="nav-links">
+      <a href="#acasa">Acasă</a>
+      <a href="#servicii">Servicii & Prețuri</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#recenzii">Recenzii</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="benefit-bar">✅ <span>Garanție 5 ani</span> • ✅ <span>Preț corect</span> • ✅ <span>Intervenție 1 oră</span></div>
+</header>
+
+<!-- HERO CU POZA NOUA -->
+<section id="acasa" class="hero">
+<h1 data-aos="fade-up">Instalator în Chișinău care rezolvă din prima</h1>
+<p class="subtitle" data-aos="fade-up" data-aos-delay="100">Calitate • Rapiditate • Preț Corect</p>
+
+<div class="stats" data-aos="fade-up" data-aos-delay="200">
+  <div class="stat"><b>650+</b>Lucrări</div>
+  <div class="stat"><b>24/7</b>Disponibil</div>
+  <div class="stat"><b>5 ani</b>Garanție</div>
+  <div class="stat"><b>1h</b>Ajung la tine</div>
 </div>
 
-<!-- HERO -->
-<section class="hero">
-<h1>Instalator Chișinău care rezolvă din prima</h1>
-<p class="subtitle">Ajung rapid • fără surprize • 24/7</p>
+<a href="tel:+37368129925" class="btn" data-aos="zoom-in" data-aos-delay="300">📞 Sună ACUM</a>
+<div class="phone" data-aos="fade-up" data-aos-delay="400">068 12 99 25</div>
+<div class="timer" data-aos="fade-up">⏳ Loc liber în <span id="count">15</span> minute</div>
+<p style="color:var(--green);font-weight:700;margin-top:10px;" data-aos="fade-up">🟢 Activ acum</p>
+</section>
 
-<a href="tel:+37368129925" class="btn">📞 Sună ACUM</a>
-<div class="phone">📞 068 12 99 25</div>
-
-<div class="timer">⏳ Loc liber în următoarele <span id="count">15</span> minute</div>
-
-<p style="color:#22c55e;font-weight:700;margin-top:10px;">
-🟢 Activ acum • intervenții azi
-</p>
+<!-- SERVICII -->
+<section id="servicii" class="section">
+<h2 data-aos="fade-up">Servicii & Prețuri transparente</h2>
+<div class="grid">
+<div class="card" data-aos="fade-up">Desfundare țevi<b>de la 200 lei</b></div>
+<div class="card" data-aos="fade-up" data-aos-delay="50">Montaj boiler<b>de la 500 lei</b></div>
+<div class="card" data-aos="fade-up" data-aos-delay="100">Reparație scurgeri<b>de la 250 lei</b></div>
+<div class="card" data-aos="fade-up" data-aos-delay="150">Montaj robinet<b>de la 200 lei</b></div>
+<div class="card" data-aos="fade-up" data-aos-delay="200">Montaj WC / chiuvetă<b>de la 400 lei</b></div>
+<div class="card" data-aos="fade-up" data-aos-delay="250">Instalație completă<b>de la 1200 lei</b></div>
+</div>
+<p style="opacity:.6;margin-top:20px;text-align:center">*Prețul final după evaluare gratuită la fața locului</p>
 </section>
 
 <!-- GALERIE -->
-<section class="section">
-<h2>Lucrări reale</h2>
-
+<section id="galerie" class="section">
+<h2 data-aos="fade-up">Lucrări reale</h2>
 <div class="grid">
-<div class="img-box"><img src="lucrare6.jpg"><div class="badge">✔ Complex • de la 1200 lei</div></div>
-<div class="img-box"><img src="lucrare1.jpg"><div class="badge">✔ Instalație • de la 600 lei</div></div>
-<div class="img-box"><img src="lucrare2.jpg"><div class="badge">⚡ Rapid • de la 250 lei</div></div>
-<div class="img-box"><img src="lucrare3.jpg"><div class="badge">🔧 Reparație • de la 300 lei</div></div>
-
-<div class="img-box"><img src="lucrare-2.jpg"><div class="badge">✔ Finalizat • de la 300 lei</div></div>
-<div class="img-box"><img src="lucrare-3.jpg"><div class="badge">💰 Corect • de la 300 lei</div></div>
-<div class="img-box"><img src="lucrare-4.jpg"><div class="badge">✔ Calitate • de la 300 lei</div></div>
-
-<div class="img-box"><img src="baie1.jpg"><div class="badge">🛁 Baie • de la 800 lei</div></div>
-<div class="img-box"><img src="boiler1.jpg"><div class="badge">🔥 Boiler • de la 500 lei</div></div>
-<div class="img-box"><img src="reparatie1.jpg"><div class="badge">⚡ Urgent • de la 250 lei</div></div>
-<div class="img-box"><img src="teava1.jpg"><div class="badge">🔧 Țevi • de la 200 lei</div></div>
+<div class="img-box" data-aos="zoom-in"><img src="lucrare1.jpg" alt="Instalație" loading="lazy"><div class="badge">✔ Instalație • de la 600 lei</div></div>
+<div class="img-box" data-aos="zoom-in" data-aos-delay="50"><img src="lucrare2.jpg" alt="Reparație" loading="lazy"><div class="badge">⚡ Rapid • de la 250 lei</div></div>
+<div class="img-box" data-aos="zoom-in" data-aos-delay="100"><img src="lucrare3.jpg" alt="Țevi" loading="lazy"><div class="badge">🔧 Reparație • de la 300 lei</div></div>
+<div class="img-box" data-aos="zoom-in" data-aos-delay="150"><img src="lucrare4.jpg" alt="Finalizat" loading="lazy"><div class="badge">✔ Finalizat • de la 300 lei</div></div>
 </div>
 </section>
 
-<!-- PRETURI -->
-<section class="section">
-<h2>Prețuri instalații sanitare</h2>
-
+<!-- RECENZII -->
+<section id="recenzii" class="section">
+<h2 data-aos="fade-up">Peste 650 clienți mulțumiți</h2>
 <div class="grid">
-<div class="card">Desfundare țevi<br><b>de la 200 lei</b></div>
-<div class="card">Montaj boiler<br><b>de la 500 lei</b></div>
-<div class="card">Reparație scurgeri<br><b>de la 250 lei</b></div>
-<div class="card">Montaj robinet<br><b>de la 200 lei</b></div>
-<div class="card">Montaj WC / chiuvetă<br><b>de la 400 lei</b></div>
-<div class="card">Instalație completă<br><b>de la 1200 lei</b></div>
+  <div class="review" data-aos="fade-right"><div class="stars">★★★</div>"A venit în 30 min la 2 noaptea. A rezolvat în 20 min."<br><b>- Ion C. Buiucani</b></div>
+  <div class="review" data-aos="fade-left"><div class="stars">★★★</div>"Cel mai corect preț din Chișinău. Recomand!"<br><b>- Maria P. Centru</b></div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+<h2 data-aos="fade-up">Întrebări frecvente</h2>
+<details data-aos="fade-up"><summary>Lucrați în weekend și sărbători?</summary><p>Da, 24/7 fără zile libere.</p></details>
+<details data-aos="fade-up"><summary>Oferiți garanție?</summary><p>Da, 5 ani garanție scrisă la toate lucrările.</p></details>
+</section>
+
+<!-- HARTĂ -->
+<section id="contact" class="section">
+<h2 data-aos="fade-up">Zona de intervenție</h2>
+<iframe src="https://www.google.com/maps?q=Chișinău&output=embed" width="100%" height="400" style="border:0;border-radius:18px" loading="lazy"></iframe>
+<p style="opacity:.7;margin-top:12px;text-align:center">Chișinău + Durlești, Codru, Stăuceni, Ciorescu, Trușeni</p>
+</section>
+
+<!-- FLOAT BUTTONS -->
+<div class="float-btn">
+  <a href="tel:+37368129925" class="call">📞</a>
+  <a href="https://wa.me/37368129925?text=Salut,%20am%20o%20problemă%20la%20instalații" class="whatsapp">💬</a>
+  <a href="#acasa" class="top-btn" id="topBtn">↑</a>
 </div>
 
-<p style="opacity:.6;margin-top:10px;text-align:center">
-Prețul exact se stabilește după evaluare
-</p>
-</section>
-
-<!-- GOOGLE MAP -->
-<section class="section map">
-<h2>Zona de intervenție</h2>
-
-<iframe 
-src="https://www.google.com/maps?q=Chișinău&output=embed" 
-width="100%" 
-height="400" 
-style="border:0;"
-loading="lazy">
-</iframe>
-
-<p style="opacity:.7;margin-top:10px;text-align:center">
-Intervenim rapid în tot Chișinău și suburbii
-</p>
-</section>
-
-<!-- FLOAT -->
-<a href="tel:+37368129925" class="call">📞</a>
-
-<a href="https://wa.me/37368129925?text=Salut,%20am%20o%20problemă%20la%20instalații.%20poți%20veni%20rapid?"
-class="whatsapp">💬</a>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-// TIMER
+AOS.init({duration:900,once:true});
 let t=15;
-setInterval(()=>{
-t--;
-if(t<1)t=15;
-document.getElementById('count').innerText=t;
-},60000);
-
-// TRACKING
-document.querySelectorAll('a[href^="tel"]').forEach(btn=>{
-btn.addEventListener('click',()=>{
-console.log("apel trimis");
-});
-});
+setInterval(()=>{t--;if(t<1)t=15;document.getElementById('count').innerText=t;},60000);
+window.onscroll=()=>{document.getElementById('topBtn').style.display=window.scrollY>400?'block':'none'}
 </script>
-
 </body>
 </html>
